@@ -89,7 +89,7 @@ function Movie(name, genre, rating) {
 
 // Code here
 Movie.prototype.changeRating = function(rating) {
-  return (this.rating += rating /= 2);
+  return (this.rating = (this.rating += rating) / 2);
 };
 ////////// PROBLEM 5 //////////
 
